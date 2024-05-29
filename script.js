@@ -32,7 +32,7 @@ frm.addEventListener("submit", (e) =>{
     let produto;
     if(frm.rbPizza.checked){
         const num = frm.inPizza.selectedIndex; // obtem o n° do item selecionado
-        produto = frm.inBebida.options[num].text; // texto do item selecionado
+        produto = frm.inPizza.options[num].text; // texto do item selecionado
     }else{
         const num = frm.inBebida.selectedIndex;
         produto = frm.inBebida.options[num].text;
