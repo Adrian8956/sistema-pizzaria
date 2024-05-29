@@ -1,7 +1,7 @@
 const frm = document.querySelector("form");
 const resp = document.querySelector("pre");
 
-const item = [];
+const itens= [];
 
 frm.rbPizza.addEventListener("click", () => {
     frm.inBebida.className = "oculta";
@@ -39,8 +39,8 @@ frm.addEventListener("submit", (e) =>{
     }
 
     const detalhes = frm.inDetalhes.value;
-    item.push(produto + "(" + detalhes + ")");
-    resp.innerText = item.join("\n");
+    itens.push(produto + "(" + detalhes + ")");
+    resp.innerText = itens.join("\n");
 
     frm.reset();
     frm.rbPizza.dispatchEvent(new Event("click"));
