@@ -13,3 +13,16 @@ frm.rbBebida.addEventListener("click", () => {
     frm.inBebida.className = "exibe";
 });
 
+frm.inDetalhes.addEventListener("focus", () => {
+   if(frm.rbPizza.checked){
+    const pizza = frm.inPizza.value;
+
+    const num = pizza == "media" ? 2 : pizza == "grande" ? 3 : 4;
+
+    frm.inDetalhes.placeholder = `Até ${num} sabores`
+   }
+});
+
+frm.inDetalhes.addEventListener("blur", () =>{
+    frm.inDetalhes.placeholder = ""
+})
