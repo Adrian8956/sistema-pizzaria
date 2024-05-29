@@ -39,8 +39,8 @@ frm.addEventListener("submit", (e) =>{
     }
 
     const detalhes = frm.inDetalhes.value;
-    itens.push(produto + "(" + detalhes + ")");
-    resp.innerText = itens.join("\n");
+    item.push(produto + "(" + detalhes + ")");
+    resp.innerText = item.join("\n");
 
     frm.reset();
     frm.rbPizza.dispatchEvent(new Event("click"));
